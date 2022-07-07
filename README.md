@@ -2,11 +2,11 @@
 
 #### REST-Rant is an app where users can review restaurants.
 
->(Summary)
+> (Summary)
 
-##Tech Usage
+## Tech Usage
 
-###Routes
+### Routes
 
 | Method | Path               | Purpose                                          |
 |--------|--------------------|--------------------------------------------------|
@@ -21,9 +21,9 @@
 | GET    | *                  | 404 page(matches any route not defined above)    |
 
 
-##Database
+## Database
 
-###Places
+### Places
 
 | Field    | Type      |
 | -------- | --------- |
@@ -34,7 +34,7 @@
 | cuisines | String    |
 | pic      | String    |
 
-###Rants
+### Rants
 
 | Field     | Type                   |
 | --------- | ---------------------- |
