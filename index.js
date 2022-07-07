@@ -19,7 +19,7 @@ app.get('/',  (req, res)=>{
 })
 //create default route to "page not found"
 app.get('*', (req, res)=>{
-    res.status(404).send('<h1>404 page</h1>')
+    res.render('error404')
 })
 
 //Listen for connections.
