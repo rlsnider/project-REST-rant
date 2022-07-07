@@ -4,13 +4,18 @@ const express = require('express')
 require('dotenv').config()
 //initialize the app object
 const app = express()
+
+//define the view engine 
+app.set('view engine', 'jsx')
+app.engine('jsx', require('express-react-views').createEngine())
+
 //link to controllers/places
 app.use('/places', require('./controllers/places'))
 
 //create homepage route
-app.get('/', function (req, res){
+app.get('/',  (req, res)=>{
     console.log('client just hit the route')
-    res.send('Hello World')
+    res.render('Home')
 })
 //create default route to "page not found"
 app.get('*', (req, res)=>{
