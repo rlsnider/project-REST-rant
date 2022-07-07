@@ -1,12 +1,12 @@
 # Project REST-Rant
 
-REST-Rant is an app where users can review restaurants.
+#### REST-Rant is an app where users can review restaurants.
 
-(Summary)
+>(Summary)
 
-Tech Usage
+##Tech Usage
 
-Routes
+###Routes
 
 | Method | Path               | Purpose                                          |
 |--------|--------------------|--------------------------------------------------|
@@ -21,9 +21,9 @@ Routes
 | GET    | *                  | 404 page(matches any route not defined above)    |
 
 
-Database
+##Database
 
-Places
+###Places
 
 | Field    | Type      |
 | -------- | --------- |
@@ -34,12 +34,13 @@ Places
 | cuisines | String    |
 | pic      | String    |
 
-Rants
+###Rants
 
-Field	Type
-_id	Object ID
-place_id	ref(places) Object_Id
-rant	Boolean
-rating	Number
-comment	String
-reviewer	String
+| Field     | Type                   |
+| --------- | ---------------------- |
+| \_id      | Object ID              |
+| place\_id | ref(places) Object\_Id |
+| rant      | Boolean                |
+| rating    | Number                 |
+| comment   | String                 |
+| reviewer  | String                 |
