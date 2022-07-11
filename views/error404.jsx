@@ -4,7 +4,7 @@ const Def = require('./default')
 
 //create stub 
 function error404 () {
-    return(
+    return (
         <Def>
             <main>
                 <h1>404: PAGE NOT FOUND</h1>

@@ -15,7 +15,7 @@ app.use('/places', require('./controllers/places'))
 //create homepage route
 app.get('/',  (req, res)=>{
     console.log('client just hit the route')
-    res.render('Home')
+    res.render('home')
 })
 //create default route to "page not found"
 app.get('*', (req, res)=>{
