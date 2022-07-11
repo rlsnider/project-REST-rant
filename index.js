@@ -1,9 +1,11 @@
 //require needed modules
 const express = require('express')
-//get environmental variables
-require('dotenv').config()
+
 //initialize the app object
 const app = express()
+
+//get environmental variables
+require('dotenv').config()
 
 //define the view engine 
 app.set('view engine', 'jsx')
