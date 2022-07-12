@@ -1,6 +1,6 @@
 //require imports
 const React = require('react')
-const Def = require('./default')
+const Def = require('../default')
 
 //create stub
 function index (data){

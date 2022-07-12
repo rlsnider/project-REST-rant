@@ -1,9 +1,9 @@
 const router = require('express').Router()
 
 //This will show a list of all "places"
-router.get('/', (req, res) => {
-   res.render('GET /places')
-})
+// router.get('/', (req, res) => {
+//    res.render('places/index.jsx')
+// })
 
 //Get /places
 router.get('/', (req, res)=>{
@@ -18,9 +18,9 @@ router.get('/', (req, res)=>{
     city: 'Phoenix',
     state: 'AZ',
     cuisines: 'Coffee, Bakery',
-    pic: 'http//placekitten.com/250/250'
+    pic: 'http://placekitten.com/250/250'
 }]
-    res.render('places/index', { places })
+    res.render('places/index.jsx', { places })
 })
 
 module.exports = router
