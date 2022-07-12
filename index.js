@@ -10,6 +10,7 @@ require('dotenv').config()
 //define the view engine 
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
+app.use(express.static('public'))
 
 //link to controllers/places
 app.use('/places', require('./controllers/places'))
