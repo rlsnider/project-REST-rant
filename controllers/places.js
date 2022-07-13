@@ -22,7 +22,7 @@ router.get('/', (req, res)=>{
     city: 'Phoenix',
     state: 'AZ',
     cuisines: 'Coffee, Bakery',
-    pic: 'http://placekitten.com/250/250'
+    pic:'public\images\Coding-cat-cafe'
 }]
     res.render('places/index.jsx', { places })
 })
