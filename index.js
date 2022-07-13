@@ -1,10 +1,7 @@
-//get environmental variables
+//get environmental variables and globals
 require('dotenv').config()
 
-//require needed modules
 const express = require('express')
-
-//initialize the app object
 const app = express()
 
 
