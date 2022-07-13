@@ -7,13 +7,13 @@ const app = express()
 
 
 //Express Settings
-//app.set('views', _dirname + '/views')
+app.set('views', _dirname + '/views')
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
 app.use(express.static('public'))
 
 //link to controllers/places
-app.use('/places', require('./controllers/places'))
+app.use('/places', require('/controllers/places'))
 
 app.use(express.urlencoded({ extended: true }))
 //create homepage route

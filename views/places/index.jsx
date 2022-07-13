@@ -4,11 +4,11 @@ const Def = require('../default')
 
 //create stub
 function index (data){
-    let placesFormatted = data.places.map((place)=>{
+    let placesFormatted = data.places.map((place, index)=>{
         return (
             <div className="col-sm-6">
                 <h2>
-                <a href={`/places/${place.id}`}>
+                <a href={`/places/${index}`}>
                     {place.name}
                     </a>
                 </h2>
