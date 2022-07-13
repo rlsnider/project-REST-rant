@@ -1,13 +1,16 @@
+//get environmental variables
+require('dotenv').config()
+
 //require needed modules
 const express = require('express')
 
 //initialize the app object
 const app = express()
 
-//get environmental variables
-require('dotenv').config()
 
-//define the view engine 
+
+//Express Settings
+//app.set('views', _dirname + '/views')
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
 app.use(express.static('public'))
@@ -15,6 +18,7 @@ app.use(express.static('public'))
 //link to controllers/places
 app.use('/places', require('./controllers/places'))
 
+//app.use(express.urlencoded({ extended: true }))
 //create homepage route
 app.get('/',  (req, res)=>{
     console.log('client just hit the route')
