@@ -18,7 +18,7 @@ app.use(express.static('public'))
 //link to controllers/places
 app.use('/places', require('./controllers/places'))
 
-//app.use(express.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true }))
 //create homepage route
 app.get('/',  (req, res)=>{
     console.log('client just hit the route')
