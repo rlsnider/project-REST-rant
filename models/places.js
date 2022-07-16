@@ -1,3 +1,4 @@
+
 let places = [{
     name: 'H-Thai-ML',
     city: 'Seattle', 
@@ -12,3 +13,5 @@ let places = [{
     pic:'public/images/Coding-cat-cafe'
 }]
   
+
+module.exports = places;

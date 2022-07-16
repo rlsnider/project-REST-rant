@@ -4,6 +4,7 @@ const Def = require('../default')
 
 //create stub
 function index (data){
+    console.log(data)
     let placesFormatted = data.places.map((place, index)=>{
         return (
             <div className="col-sm-6">

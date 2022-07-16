@@ -1,9 +1,10 @@
 const router = require('express').Router()
-const places = require('../models')
+const places = require('../models/places.js')
+
 
 //This will show a list of all "places"
 router.get('/', (req, res) => {
-  res.render('places/index', { places })
+  res.render('places/index', { places : places })
  })
 
 //get places new
