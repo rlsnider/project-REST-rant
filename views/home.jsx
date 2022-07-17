@@ -9,7 +9,7 @@ function home(){
             <main>
                <h1>REST-rant</h1>
                     <div>
-                        <img src="/images/food-homepage" alt='Chia Fruit Shake' />
+                        <img className="img" src="/images/food-homepage" alt='Chia Fruit Shake' />
                         <div>
                             Photo by <a href="AUTHOR_LINK">Brenda Godinez</a>on <a href="UNSPLASH_LINK">Unsplash</a>
                         </div>

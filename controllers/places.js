@@ -55,7 +55,11 @@ router.post('/', (req, res) => {
         res.render('error404')
     }
     else {
-      res.render('places/edit', { place: places[id] })
+      let data ={
+      place: places[id], 
+      id:id
+      }
+      res.render('places/edit', data)   
     }
   })
   //PUT route
@@ -82,7 +86,7 @@ router.post('/', (req, res) => {
   
         // Save the new data into places[id]
         places[id] = req.body
-        res.redirect(`/places/${id}`)
+        res.redirect(`/places/${req.params.id}`)
     }
   })
   
@@ -90,6 +94,7 @@ router.post('/', (req, res) => {
   
   //delete route
   router.delete('/:id', (req, res)=>{
+   
     let id = Number(req.params.id)
     if (isNaN(id)){
       res.render('error404')
@@ -99,7 +104,7 @@ router.post('/', (req, res) => {
     }
     else{
       places.splice(id, 1)
-      res.redirect('/places')
+      res.redirect(`/places/${req.params.id}`)
 
     }
   })
