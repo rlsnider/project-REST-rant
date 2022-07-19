@@ -5,7 +5,14 @@ const express = require('express')
 const app = express()
 const methodOverride = require('method-override')
 
+//mongoose settings
+const mongoose = ('mongoose')
 
+mongoose.connect(process.env.MONGO_URI, {
+    useNewUrlParser:true,
+    useUnifiedTopology: true
+})
+module.exports.Place = require('./places')
 
 //Express Settings
 app.set('views', __dirname + '/views')
@@ -32,5 +39,5 @@ app.get('*', (req, res)=>{
 
 //Listen for connections.
 app.listen(process.env.PORT, ()=>{
-    console.log('I am awake!')
+    console.log('I am awake at port 3000!')
 })
