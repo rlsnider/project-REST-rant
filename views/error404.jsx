@@ -1,21 +1,24 @@
-//import required 
 const React = require('react')
 const Def = require('./default')
 
-//create stub 
 function error404 () {
     return (
-        <Def>
-            <main>
+      
+      <Def>
+          <main>
+              <div>
                 <h1>404: PAGE NOT FOUND</h1>
                 <div>
-                    <img className="img" src='http://placekitten.com/250/250' />
+                  <img  id ="errorDog"src="/images/error404.jpg"/>
+                  <div>
+                    Image by <a href="https://makemyinspiration.com">Ramona Snider</a>
+                  </div>
                 </div>
-                <p>Oops, sorry, we can't find this page!</p>
-            </main>
-        </Def>
-    )      
-}
-
-//export stub
+              </div>
+              <p>Oops, sorry, we can't find this page!</p>
+          </main>
+      </Def>
+    )
+  }
+  
 module.exports = error404
