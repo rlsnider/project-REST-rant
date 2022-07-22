@@ -8,17 +8,17 @@ h1 {
     width: 50%;
     border: 2px solid cornflowerblue;
 }
-#chia {
+ #chia {
     
-    height: 35%;
-    width: 35%;
+    height: 20%;
+    width:20%;
     border: 2px solid cornflowerblue;
 }
 #food { 
-    height: 35%;
-    width:35%;
+    height: 20%;
+    width:20%;
     border: 2px solid cornflowerblue;
-}
+} 
 nav {
   background-color: cornflowerblue;
   padding: 10px;
@@ -33,11 +33,12 @@ nav li {
 }
 nav a {
   color:white;
+  text-decoration: none;
   font-size: 1.5em;
 }
 nav a:hover {
   color:pink;
-  text-decoration:none;
+  text-decoration: none;
 }
 body {
   background-color: lightblue;
