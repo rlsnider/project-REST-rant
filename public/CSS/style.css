@@ -14,15 +14,19 @@ h2 {
 }
  #chia {
     
-    height: 20%;
-    width:20%;
-    border: 2px solid cornflowerblue;
+    height: 35%;
+    width:35%;
+   
 }
 #food { 
-    height: 20%;
-    width:20%;
-    border: 2px solid cornflowerblue;
+    height: 35%;
+    width: 35%;
+  
 } 
+pics1 {
+  background-color:lightblue;
+  margin-left: 25px;
+}
 nav {
   background-color: cornflowerblue;
   padding: 10px;

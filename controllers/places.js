@@ -82,7 +82,7 @@ else{
   }
   //Save the new data into places[id]
   places[id]=req.body
-  res.redirect('/places/${req.params.id}')
+  res.redirect(`/places/${id}`)
 }
 })
 //DELETE route 

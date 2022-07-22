@@ -7,7 +7,7 @@ function home () {
           <main>
             <div>
               <h1>REST-rant</h1>
-                <div className="row container">
+                <div id="pics1" className="row">
                 <img id="chia" src="/images/brenda-godinez-MsTOg6rhRVk-unsplash (1).jpg" alt="Chia Fruit Shake" />
                     <div>
                         Photo by <a href="AUTHOR_LINK">Brenda Godinez</a> on <a href="UNSPLASH_LINK">Unsplash</a>
