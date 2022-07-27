@@ -5,29 +5,23 @@ function home () {
     return (
         <Def>
           <main>
-            <div>
               <h1>REST-rant</h1>
-                <div id="pics1" className="row">
-                <img id="chia" src="/images/brenda-godinez-MsTOg6rhRVk-unsplash (1).jpg" alt="Chia Fruit Shake" />
-                    <div>
+            
+                <div className="gallery" >
+                    <img id="chia" src="/images/brenda-godinez-MsTOg6rhRVk-unsplash (1).jpg" alt="Chia Fruit Shake" />
+                    <div className="desc">
                         Photo by <a href="AUTHOR_LINK">Brenda Godinez</a> on <a href="UNSPLASH_LINK">Unsplash</a>
-                     </div>
-                
-                <img id="food" src="/images/anantha-krishnan-6Ra0Xe90qac-unsplash.jpg" alt="Food" />
-        
-                    <div>
+                    </div>
+                </div>
+                <div className="gallery">
+                    <img id="food" src="/images/anantha-krishnan-6Ra0Xe90qac-unsplash.jpg" alt="Food" />
+                    <div className="desc">
                         Photo by <a href="AUTHOR_LINK">Anantha Krishnan</a> on <a href="UNSPLASH_LINK">Unsplash</a>
                     </div>
                 </div>
-            </div>
-    <a href="/places">
-        <button className="btn-primary">Places Page</button>
-    </a>
-    
-</main>
-
+            </main>
         </Def>
-    )
-}
+        )
+        }
 
 module.exports = home
